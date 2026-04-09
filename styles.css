@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #fff;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.xd {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 40vw;
+  max-width: 100%;
+  max-height: 40vh;
+  max-height: 40dvh;
+  height: auto;
+  visibility: hidden;
+}
+
+.xd.xd--ready {
+  visibility: visible;
+}
