@@ -38,3 +38,63 @@ body {
 .xd.xd--ready {
   visibility: visible;
 }
+
+.about {
+  position: relative;
+  background: #fff;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px 24px 32px;
+}
+
+.about p {
+  margin: 0 0 1.5em;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+.credits {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.credits strong {
+  font-weight: 700;
+}
+
+.copyright {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  color: #999;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  gap: 12px;
+  padding: 20px 0 0;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background: #e6009c;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background: #000;
+}

@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mc_embed_signup {
+  background: #000;
+  clear: left;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 600px;
+  max-width: 100%;
+}
+
+#mc_embed_signup h2,
+#mc_embed_signup label,
+#mc_embed_signup .indicates-required {
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mc_embed_signup .asterisk {
+  color: #E600CC;
+}
+
+#mc_embed_signup input[type="email"] {
+  background: #111;
+  color: #fff;
+  border: 1px solid #fff !important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mc_embed_signup input[type="email"]:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #fff;
+}
+
+#mc_embed_signup input[type="email"]::placeholder {
+  color: #888;
+}
+
+#mc_embed_signup .mce_inline_error {
+  color: #E600CC !important;
+  background: #000 !important;
+  border: none !important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mc_embed_signup input#mc-embedded-subscribe.button {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#mc_embed_signup input#mc-embedded-subscribe.button:hover {
+  background-color: #e0e0e0 !important;
+}
+
+#thank-you-message {
+  display: none;
+  text-align: center;
+  font: 20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  padding: 40px;
+}

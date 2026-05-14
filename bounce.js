@@ -12,6 +12,19 @@
   const MAX_FRAME_DT = 0.25;
   const MAX_STEPS_PER_FRAME = 16;
 
+  const BG_COLORS = [
+    "rgb(230, 0, 204)",
+    "rgb(242, 102, 0)",
+    "rgb(0, 160, 227)",
+    "rgb(255, 255, 255)",
+  ];
+  let colorIndex = BG_COLORS.length - 1;
+
+  function nextBgColor() {
+    colorIndex = (colorIndex + 1) % BG_COLORS.length;
+    document.body.style.backgroundColor = BG_COLORS[colorIndex];
+  }
+
   let vx = speed;
   let vy = speed;
   let x = 0;
@@ -58,18 +71,22 @@
     if (x <= 0) {
       x = 0;
       vx = Math.abs(speed);
+      nextBgColor();
     }
     if (x >= maxX) {
       x = maxX;
       vx = -Math.abs(speed);
+      nextBgColor();
     }
     if (y <= 0) {
       y = 0;
       vy = Math.abs(speed);
+      nextBgColor();
     }
     if (y >= maxY) {
       y = maxY;
       vy = -Math.abs(speed);
+      nextBgColor();
     }
   }
 
