@@ -16,14 +16,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 16px;
+}
+
+#mc_embed_shell {
+  width: 100%;
+  max-width: 600px;
+  overflow-x: hidden;
 }
 
 #mc_embed_signup {
   background: #000;
   clear: left;
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  width: 600px;
-  max-width: 100%;
+  font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 #mc_embed_signup h2,
@@ -41,7 +48,9 @@ body {
   background: #111;
   color: #fff;
   border: 1px solid #fff !important;
+  border-radius: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 #mc_embed_signup input[type="email"]:focus {
@@ -59,14 +68,22 @@ body {
   background: #000 !important;
   border: none !important;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: none;
+}
+
+#mc_embed_signup .indicates-required {
+  text-transform: none;
 }
 
 #mc_embed_signup input#mc-embedded-subscribe.button {
   background-color: #fff !important;
   color: #000 !important;
   border: none;
+  border-radius: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -80,4 +97,31 @@ body {
   font: 20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
   padding: 40px;
+  text-transform: uppercase;
+}
+
+#home-link-wrap {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+}
+
+#home-link {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 24px;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+#home-link:hover {
+  background: #fff;
+  color: #000;
 }
