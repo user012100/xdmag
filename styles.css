@@ -19,7 +19,7 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100svh;
 }
 
 .xd {
@@ -97,4 +97,12 @@ body {
 
 .btn:hover {
   background: #000;
+}
+
+@media (max-width: 600px) {
+  .about {
+    margin: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
