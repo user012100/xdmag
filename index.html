@@ -3,47 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>XD</title>
+    <title>XD Magazine by Ali Salifov</title>
+    <meta
+      name="description"
+      content="XD Magazine is an independent New York print magazine by Ali Salifov featuring contemporary artists, photography, and editorial stories centered on human touch and identity."
+    />
+    <meta name="author" content="Ali Salifov" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://xdmag.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="XD Magazine" />
+    <meta property="og:title" content="XD Magazine by Ali Salifov" />
+    <meta
+      property="og:description"
+      content="Independent New York print magazine by Ali Salifov focused on artists, photography, and human-centered creative practice."
+    />
+    <meta property="og:url" content="https://xdmag.com/" />
+    <meta property="og:image" content="https://xdmag.com/assets/XD.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="XD Mag by Ali Salifov" />
+    <meta
+      name="twitter:description"
+      content="Independent New York print magazine by Ali Salifov focused on artists, photography, and human-centered creative practice."
+    />
+    <meta name="twitter:image" content="https://xdmag.com/assets/XD.svg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "XD Mag",
+            "url": "https://xdmag.com/",
+            "publisher": {
+              "@id": "https://xdmag.com/#organization"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://xdmag.com/#organization",
+            "name": "XD Mag",
+            "url": "https://xdmag.com/",
+            "founder": {
+              "@id": "https://xdmag.com/#person"
+            },
+            "sameAs": ["https://instagram.com/xdmagnyc"]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://xdmag.com/#person",
+            "name": "Ali Salifov",
+            "jobTitle": "Creative Director and Designer",
+            "worksFor": {
+              "@id": "https://xdmag.com/#organization"
+            }
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="styles.css" />
     <script src="bounce.js" defer></script>
   </head>
   <body>
-    <main class="page">
+    <header class="page" aria-label="XD Mag header">
+      <h1 class="sr-only">XD Mag by Ali Salifov</h1>
       <img
         class="xd"
         src="assets/XD.svg"
         width="162"
         height="92"
-        alt="XD"
+        alt="XD Mag logo"
         decoding="async"
       />
-    </main>
-    <section class="about">
-      <p><strong><em>XD</em></strong> is a print magazine centered on artists in New York City whose work prioritizes intuition and human touch. At a moment when culture feels so algorithmically optimized and disposable, <strong><em>XD</em></strong> highlights personal creative practices that are shaped by identity and human experiences.</p>
-      <p><strong><em>XD ISSUE 001: Human Touch</em></strong> focuses on the tension between human expression and machine tools in the age of content production. Featuring artists navigating New York through the lens of immigration, queerness and womanhood, <strong><em>XD</em></strong> looks at how intuition and lived experiences shape art in ways that cannot be automated. Through photography, interviews, and editorial features, <strong><em>XD</em></strong> explores what remains distinctly human in the art of making.</p>
-      <p class="credits">
-        <strong>FEATURING:</strong><br>
-        ADDIE WARNCKE<br>
-        SAMUEL CORTÉS RIVERA<br>
-        VICTORIA WINTER<br>
-        YUKA TAMURA<br>
-        <br>
-        <strong>CREATIVE DIRECTION &amp; DESIGN:</strong><br>
-        ALI SALIFOV<br>
-        <br>
-        <strong>PHOTOGRAPHY:</strong><br>
-        NICK LAMBROU<br>
-        <br>
-        <strong>WRITING:</strong><br>
-        MADISON BULNES<br>
-        <br>
-        <strong>ASSISTANCE:</strong><br>
-        LUIS ROCUANT
-      </p>
-      <footer class="footer">
-        <a class="btn" href="https://instagram.com/xdmagnyc" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-        <a class="btn" href="signup/">SIGN UP</a>
+    </header>
+
+    <main class="about" id="content">
+      <article>
+        <p><strong><em>XD</em></strong> is a print magazine centered on artists in New York City whose work prioritizes intuition and human touch. At a moment when culture feels so algorithmically optimized and disposable, <strong><em>XD</em></strong> highlights personal creative practices that are shaped by identity and human experiences.</p>
+
+        <p><strong><em>XD Issue 001: Human Touch</em></strong> features artists navigating New York through the lens of immigration, queerness and womanhood. <strong><em>XD</em></strong> looks at how intuition and lived experiences shape art in ways that cannot be automated. Through photography, interviews, and editorial features, <strong><em>XD</em></strong> explores what remains distinctly human in the art of making.</p>
+
+        <section class="credits" aria-labelledby="credits-title">
+          <h2 id="credits-title" class="sr-only">Contributors</h2>
+          <p>
+            <strong>Featuring:</strong><br />
+            Addie Warncke<br />
+            Samuel Cortés Rivera<br />
+            Victoria Winter<br />
+            Yuka Tamura
+          </p>
+          <p>
+            <strong>Creative Direction &amp; Design:</strong><br />
+            Ali Salifov
+          </p>
+          <p>
+            <strong>Photography:</strong><br />
+            Nick Lambrou
+          </p>
+          <p>
+            <strong>Writing:</strong><br />
+            Madison Bulnes
+          </p>
+          <p>
+            <strong>Assistance:</strong><br />
+            Luis Rocuant
+          </p>
+        </section>
+      </article>
+
+      <nav class="footer" aria-label="Primary links">
+        <a class="btn" href="https://instagram.com/xdmagnyc" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="btn" href="signup/">Sign Up</a>
+      </nav>
+
+      <footer>
+        <p class="copyright">&copy; 2026 XD. All rights reserved.</p>
       </footer>
-      <p class="copyright">&copy; 2026 XD. All rights reserved.</p>
-    </section>
+    </main>
+  </body>
 </html>
